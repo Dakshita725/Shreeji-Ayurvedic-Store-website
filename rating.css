@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+  list-style:none;
+  padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-family:'ubuntu',sans-serif ;
+}
+
+.rightnav{
+    width: 30%;
+    text-align:right;
+    padding: 0 23px;
+}
+
+#Search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #71a173;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.rating-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.rating-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rating-form input,
+.rating-form select,
+.rating-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #71a173;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rating-form button:hover {
+    background-color: #71a173;
+}

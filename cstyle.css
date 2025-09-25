@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #71a173;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+  list-style:none;
+  padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #71a173;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-family:'ubuntu',sans-serif ;
+}
+.rightnav{
+    width: 30%;
+    text-align:right;
+    padding: 0 23px;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+#contact h2 {
+    color: #71a173;
+    margin-bottom: 0.5em;
+}
+
+#contact p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+#contact-form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn {
+    padding: 4px 16px;
+    margin: 5px 3px;
+    background-color: #71a173;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-sm{
+    padding: 2px 10px;
+    vertical-align: middle;
+  }
+
+.btn:hover {
+    background-color: #71a173;
+}
+
+footer {
+    background-color: #71a173;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

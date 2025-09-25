@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #71a173;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:30px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+  list-style:none;
+  padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-family:'ubuntu',sans-serif ;
+}
+
+.rightnav{
+    width: 30%;
+    text-align:right;
+    padding: 0 23px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #71a173;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Our Website - Shreeji Ayurvedic Store</title>
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="rating-section">
+        <h1>Rate Our Website</h1>
+        <!-- Attach the alert to the form's onsubmit event -->
+        <form action="rating.php" method="POST" class="rating-form" onsubmit="showMessage()">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback..."></textarea>
+
+            <button type="submit" class="btn">Submit Rating</button>
+        </form>
+    </section>
+    
+    <script>
+        // Function to show alert without interrupting form submission
+        function showMessage() {
+            alert("Rating successfully submitted");
+        }
+    </script>
+</body>
+</html>

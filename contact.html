@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShreeJI Ayurvedic Store</title>
+    <link rel="stylesheet" href="cstyle.css">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+        <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+        <li><a href="index.html">Home  </a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us  </a></li>
+        <li><a href="services.html">Services  </a></li>
+        <li><a href="contact.html">Contact Us  </a></li>    
+        </ul>
+        <div class="rightnav"></div>
+            <!-- Adding the Add to Bag button alongside Login and Sign In buttons -->
+            <a href="login.html"><button class="btn btn-sm">Login</button></a>
+            <a href="sign in.html"><button class="btn btn-sm">Sign In</button></a>
+            <a href=addToBag.html><button class="btn btn-sm add-to-bag">Add to Bag</button></a>
+        </div>
+    </nav>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Please fill out the form below and we will get in touch with you shortly.</p>
+            <form id="contact-form" action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+       
+</body>
+</html>
+

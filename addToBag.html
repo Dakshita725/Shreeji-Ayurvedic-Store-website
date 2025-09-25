@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Bag - Shreeji Ayurvedic Store</title>
+    <link rel="stylesheet" href="addToBag.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Bag</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bag-container">
+            <h2>Your Bag</h2>
+            <div class="bag-items">
+                <!-- Example of a single item in the bag -->
+                <div class="bag-item">
+                    <img src="img/oil.jpeg" alt="Ayurvedic Oil">
+                    <div class="item-details">
+                        <h3>Ayurvedic Oil</h3>
+                        <p>Price: ₹150</p>
+                        <div class="quantity-control">
+                            <button class="btn-decrease">-</button>
+                            <input type="number" value="1" class="quantity-input">
+                            <button class="btn-increase">+</button>
+                        </div>
+                        <button class="btn-remove">Remove</button>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for more items -->
+            </div>
+
+            <div class="bag-summary">
+                <h3>Order Summary</h3>
+                <p>Total Items: <span id="total-items">1</span></p>
+                <p>Total Price: ₹<span id="total-price">150</span></p>
+                <button class="btn-checkout">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shreeji Ayurvedic Store. All rights reserved.</p>
+    </footer>
+
+    <script src="addToBag.js"></script>
+</body>
+</html>
